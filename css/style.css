@@ -1,0 +1,129 @@
+/* Reset Global */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #008000, #ffffff) ;
+}
+
+header{
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(to right, #0000ff, #ffffff);
+}
+
+.titulosecundario{
+    margin-bottom: 20px;
+}
+
+/* PSEUDO ELEMENTOS */
+
+.container{
+    background-color: #5f9ea0;
+    margin: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.pcontainer1{
+    background-color: #ffe4c4;
+    margin-top: 20px;
+    padding: 20px;
+}
+.pcontainer1::before{
+    content: "ELEMENTO INSERIDO ANTES DO PARÁGRAFO (NÃO RESOLVIDO!) ";
+}
+
+.pcontainer2{
+    background-color: #ffe4c4;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.pcontainer2::after{
+    content: "ELEMENTO INSERIDO APÓS O PARÁGRAFO (RESOLVIDO!) ";
+}
+
+.pcontainer3{
+    background-color: #ffe4c4;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.pcontainer3::first-letter{
+    font-size: 60px;
+    color: #0000ff;
+    font-weight: 700;
+}
+
+.pcontainer4{
+    background-color: #ffe4c4;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.pcontainer4::first-line{
+    font-weight: bold;
+    font-size: 30px;
+    color: #ff0000;
+}
+
+/* PSEUDO CLASSES */
+
+.link1{
+    color: #000000;
+    font-size: 25px;
+    background-color: #008000;
+    border: 2px solid #0000ff;
+    border-radius: 40px 20px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.link1:hover{
+    color: #ffff00;
+    background-color: #ff0000;
+    border: 2px solid #00ff00;
+    border-radius: 20px 40px;
+    transform: scale(1.5);
+}
+
+.link2{
+    color: #000000;
+    font-size: 25px;
+    background-color: #008000;
+    border: #0000ff 2px solid;
+    border-radius: 40px 20px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.link2:active{
+    background-color: #ffff00;
+    border: #800080 2px solid;
+    border-radius: 20px 40px;
+    color: #ff0000;
+}
+
+.link3{
+    color: #000000;
+    font-size: 25px;
+    background-color: #008000;
+    border: #0000ff 2px solid;
+    border-radius: 40px 20px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.link3:focus{
+    color: #ff0000;
+    border: #ff0000 2px solid;
+    border-radius: 20px 40px;
+    background-color: #ffff00;
+}
